@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Record Player</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="Main">
+        <div class="BottomBox">
+            <div class="BottomBox-line"></div>
+            <div class="BottomBox-line"></div>
+            <div class="BottomBox-line"></div>
+            <div class="BottomBox-line"></div>
+        </div>
+        <div class="CircleBox">
+            <div class="CircleBox-circle"></div>
+            <div class="CircleBox-disc0 CircleBox-disc is-clickable"></div>
+            <div class="CircleBox-disc1 CircleBox-disc is-clickable"></div>
+            <div class="CircleBox-disc2 CircleBox-disc is-clickable"></div>
+            <div class="CircleBox-disc3 CircleBox-disc is-clickable"></div>
+            <div class="CircleBox-label">
+                <div class="CircleBox-labelTitle CircleBox-labelText">Record Player Demo</div>
+                <div class="CircleBox-labelName CircleBox-labelText">Peter Vashevko</div>
+                <div class="CircleBox-labelGithub CircleBox-labelText"><a href="https://github.com/theaquarium/recordplayer">See on GitHub</a></div>
+                <div class="CircleBox-labelYear CircleBox-labelText">2019</div>
+            </div>
+            <div class="CircleBox-hole"></div>
+        </div>
+        <div class="StylusBox">
+            <div class="StylusBox-stylusarm"></div>
+            <div class="StylusBox-stylusbend"></div>
+            <div class="StylusBox-styluspivot"></div>
+            <div class="StylusBox-stylusneedle"></div>
+        </div>
+        <div class="VolumeBox">
+            <input type="range" id="volume" class="control-volume" min="0" max="2" value="1" list="gain-vals" step="0.01" data-action="volume" autocomplete="off"/>
+			<datalist id="gain-vals">
+				<option value="0" label="min">
+				<option value="2" label="max">
+            </datalist>
+            <div class="VolumeBox-icon">&#128266;</div>
+        </div>
+        <div class="StopBox">
+            <div class="StopBox-button">
+                <div class="StopBox-icon"></div>
+            </div>
+        </div>
+    </div>
+    <audio id="track0" src="pizza.wav" type="audio/mpeg"></audio>
+    <audio id="track1" src="dehumidifier.wav" type="audio/mpeg"></audio>
+    <audio id="track2" src="rideshare.wav" type="audio/mpeg"></audio>
+    <audio id="track3" src="airbnb.wav" type="audio/mpeg"></audio>
+    <script src="circletype.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
