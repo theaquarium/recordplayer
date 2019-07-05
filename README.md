@@ -1,5 +1,5 @@
 # Record Player
-A demo of a music player UI element.
+A demo of a audio player UI element in the style of a record player.
 ## Demo
 Check out the demo [here](https://recordplayer.peter.vashevko.com).
 ## License
