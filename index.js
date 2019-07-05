@@ -1,4 +1,8 @@
 window.addEventListener('load', () => {
+    setTimeout(() => {
+        document.querySelector('.Loading').classList.add('is-loaded');
+    }, 1000);
+
     const vmin = Math.min(document.body.clientHeight, document.body.clientWidth) / 100;
     new CircleType(document.querySelector('.CircleBox-labelTitle'))
         .radius(14*vmin);
